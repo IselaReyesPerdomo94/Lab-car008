@@ -144,7 +144,7 @@ i:hover {
     border-radius: 5px;
     font-size: 1rem;
     font-weight: bold;
-    /* margin: 1rem; */
+    margin: 1rem;
     margin-right: 3rem;
     margin-top: 1rem;
     color: #444444;
@@ -230,6 +230,52 @@ i:hover {
 .conduce-mob input:hover {
     color: black;
     background-color: #f7b617;
+}
+
+.fee {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f7b617;
+    height: 100vh;
+    color: white;
+    margin: 0;
+    font-size: 1rem;
+    padding: 1.5rem;
+}
+
+.fee h2 {
+    margin: 0px;
+}
+
+.fee-input {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    /* align-items: center; */
+    justify-content: center;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.fee-input input {
+    margin: 1rem;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 70%;
+    padding: 0.3rem;
+}
+
+.map {
+    border: 1px solid white;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -322,17 +368,19 @@ i:hover {
         display: flex;
         flex-direction: row;
         border: 1px solid white;
-        width: 90%;
         margin: 0px;
-        padding: 10px 0;
+        padding: 5px 0;
         width: 80%;
+    }
+    .new-desk h3 {
+        margin: 0;
     }
     .info-new-app {
         display: block;
         width: 50%;
         font-size: 1.5rem;
         font-weight: 200;
-        padding: 1rem;
+        padding: 1px;
     }
     .cel-desk {
         display: flex;
