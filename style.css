@@ -145,13 +145,13 @@ i:hover {
     font-size: 1rem;
     font-weight: bold;
     /* margin: 1rem; */
-    margin-right: 10rem;
-    margin-top: 2rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
     color: #444444;
 }
 
 .buttons:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     cursor: pointer;
     color: #f7b617;
 }
@@ -175,27 +175,19 @@ i:hover {
     text-align: center;
     border: 1px solid white;
     height: 80vh;
-    width: 99%;
+    width: 90%;
     color: white;
     font-size: 1.7rem;
     font-weight: bold;
     margin: 1rem auto;
 }
 
+.new-mobile span {
+    padding: 1rem;
+}
+
 .new-desk {
     display: none;
-}
-
-.conduce-mob h3,
-.conduce-mob p {
-    margin: 0 auto;
-    padding: 0;
-    color: white;
-}
-
-.conduce-mob {
-    height: fit-content;
-    padding: 0 auto;
 }
 
 .conduce {
@@ -206,6 +198,38 @@ i:hover {
     margin: 0px 0px;
     color: white;
     display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.conduce-mob {
+    height: fit-content;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+.conduce-mob h3,
+.conduce-mob p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.conduce-mob h3 {
+    font-weight: bold;
+    margin: 0.5rem 0rem;
+}
+
+.conduce-mob input {
+    color: white;
+    background-color: #f7b617;
+    margin: 1rem 0;
+    align-self: flex-start;
+}
+
+.conduce-mob input:hover {
+    color: black;
+    background-color: #f7b617;
 }
 
 
@@ -214,7 +238,7 @@ i:hover {
 #celphone {
     display: flex;
     align-items: center;
-    height: 60vh;
+    height: 50vh;
     padding: 1rem 2rem;
 }
 
@@ -316,5 +340,20 @@ i:hover {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+    }
+    .conduce {
+        display: flex;
+        background-position: center center;
+        justify-content: flex-end;
+        align-items: initial;
+    }
+    .conduce-mob {
+        background-color: rgba(27, 27, 30, 0.8);
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1rem;
+        width: 40%;
     }
 }
