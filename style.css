@@ -45,18 +45,6 @@ i {
     padding-top: 0.3rem;
 }
 
-h1,
-h2,
-h3 {
-    text-align: justify;
-    padding: 0px auto;
-}
-
-h2 {
-    font-size: 2rem;
-    margin: 0px auto;
-}
-
 
 /* Class selector */
 
@@ -69,6 +57,7 @@ h2 {
     background-size: cover;
     background-position: center bottom;
     margin: 0px 0px;
+    /* position: fixed; */
 }
 
 .info,
@@ -78,11 +67,19 @@ h2 {
     flex-direction: column;
     background-color: #f7b617;
     color: white;
-    padding: 1rem;
-    font-size: 1.5rem;
+    padding: 2rem;
     width: 80%;
-    height: 65%;
-    /* margin: auto; */
+    height: 250px;
+}
+
+.info {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.info h2 {
+    font-size: 2rem;
+    margin: 0.2rem 0px;
 }
 
 .info-desktop {
@@ -110,6 +107,9 @@ h2 {
     border-radius: 5px;
     font-size: 1rem;
     font-weight: bold;
+    /* margin: 1rem; */
+    margin-right: 10rem;
+    margin-top: 2rem;
 }
 
 
@@ -145,7 +145,7 @@ h2 {
         display: none;
     }
     .info-desktop {
-        padding-top: 0.1rem;
+        padding: 2rem;
         display: block;
         justify-content: flex-end;
         width: 500px;
@@ -155,32 +155,29 @@ h2 {
     span {
         font-size: 1.5rem;
     }
-    .hr-span {
-        position: absolute;
-    }
-    .hr-span .option-separator {
-        z-index: 0;
-        padding: 0;
+    .or-title {
         position: relative;
-        border: none;
-        /* height: 2rem; */
-        color: white;
-        width: 100%;
-        border-top: medium double white;
         text-align: center;
+        background: #f7b617;
+        margin: 1.5rem;
+    }
+    .or-text {
+        position: relative;
         background-color: #f7b617;
-    }
-    .hr-span .option-title {
+        color: white;
+        padding: 0 3rem;
         z-index: 1;
-        display: inline-block;
-        position: absolute;
-        top: -0.9em;
-        font-size: 1.5em;
-        background-color: transparent;
-        width: 200px;
-    }
-    /* .hr-span {
         font-size: 1rem;
-        font-weight: bold;
-    } */
+    }
+    .divider {
+        position: absolute;
+        background-color: white;
+        border: none;
+        width: 100%;
+        height: 2px;
+        z-index: 0;
+    }
+    .buttons {
+        margin-top: 0px;
+    }
 }
