@@ -1,0 +1,186 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('./fonts/icomoon.eot?lwlfc0');
+    src: url('./fonts/icomoon.eot?lwlfc0#iefix') format('embedded-opentype'), url('./fonts/icomoon.ttf?lwlfc0') format('truetype'), url('./fonts/icomoon.woff?lwlfc0') format('woff'), url('./fonts/icomoon.svg?lwlfc0#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Label selector */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    height: 15vh;
+    margin: 0 0;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+figure {
+    margin: 0px;
+}
+
+i {
+    color: gray;
+    font-size: 1.5rem;
+    padding-top: 0.3rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: justify;
+    padding: 0px auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0px auto;
+}
+
+
+/* Class selector */
+
+.hero {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(img/taxi.jpg);
+    height: 85vh;
+    background-size: cover;
+    background-position: center bottom;
+    margin: 0px 0px;
+}
+
+.info,
+.info-desktop {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: #f7b617;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 80%;
+    height: 65%;
+    /* margin: auto; */
+}
+
+.info-desktop {
+    display: none;
+}
+
+.menu {
+    margin: 0px;
+    padding: 0rem 0.5rem;
+}
+
+.menu li,
+.menu-desktop li {
+    list-style: none;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+.buttons {
+    padding: 0.8rem;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/* Id Selector */
+
+
+/* Desktop */
+
+@media only screen and (min-width: 768px) {
+    .menu {
+        display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1rem;
+    }
+    .menu-desktop {
+        display: flex;
+    }
+    .menu-desktop li {
+        display: flex;
+        justify-content: space-between;
+        margin: auto 1rem;
+    }
+    .hero {
+        display: flex;
+        height: 100vh;
+    }
+    .info {
+        display: none;
+    }
+    .info-desktop {
+        padding-top: 0.1rem;
+        display: block;
+        justify-content: flex-end;
+        width: 500px;
+        height: 400px;
+    }
+    .info-desktop h3,
+    span {
+        font-size: 1.5rem;
+    }
+    .hr-span {
+        position: absolute;
+    }
+    .hr-span .option-separator {
+        z-index: 0;
+        padding: 0;
+        position: relative;
+        border: none;
+        /* height: 2rem; */
+        color: white;
+        width: 100%;
+        border-top: medium double white;
+        text-align: center;
+        background-color: #f7b617;
+    }
+    .hr-span .option-title {
+        z-index: 1;
+        display: inline-block;
+        position: absolute;
+        top: -0.9em;
+        font-size: 1.5em;
+        background-color: transparent;
+        width: 200px;
+    }
+    /* .hr-span {
+        font-size: 1rem;
+        font-weight: bold;
+    } */
+}
