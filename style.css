@@ -23,6 +23,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
+    color: #444444;
 }
 
 nav {
@@ -43,10 +44,45 @@ i {
     color: gray;
     font-size: 1.5rem;
     padding-top: 0.3rem;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+i:hover {
+    color: #f7b617;
 }
 
 
 /* Class selector */
+
+.options {
+    display: none;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    min-width: 100%;
+}
+
+.menu-bars:hover .options {
+    color: #f7b617;
+    display: block;
+    height: fit-content;
+    padding: 0 2rem;
+}
+
+.options-menu li {
+    font-size: 0.8rem;
+    color: #444444;
+    margin: 2.5rem 0rem 1rem 0rem;
+    list-style: none;
+}
+
+.options-menu li:hover {
+    color: #f7b617;
+    cursor: pointer;
+}
 
 .hero {
     display: flex;
@@ -94,6 +130,7 @@ i {
 .menu li,
 .menu-desktop li {
     list-style: none;
+    color: #444444;
 }
 
 .menu-desktop {
@@ -110,10 +147,76 @@ i {
     /* margin: 1rem; */
     margin-right: 10rem;
     margin-top: 2rem;
+    color: #444444;
+}
+
+.buttons:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #f7b617;
+}
+
+.new-app {
+    height: 100vh;
+    background-color: #f7b617;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.new-mobile div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid white;
+    height: 80vh;
+    width: 99%;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 1rem auto;
+}
+
+.new-desk {
+    display: none;
+}
+
+.conduce-mob h3,
+.conduce-mob p {
+    margin: 0 auto;
+    padding: 0;
+    color: white;
+}
+
+.conduce-mob {
+    height: fit-content;
+    padding: 0 auto;
+}
+
+.conduce {
+    background-image: url(img/conduce.jpg);
+    height: 75vh;
+    background-size: cover;
+    background-position: center bottom;
+    margin: 0px 0px;
+    color: white;
+    display: flex;
 }
 
 
 /* Id Selector */
+
+#celphone {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    padding: 1rem 2rem;
+}
 
 
 /* Desktop */
@@ -136,6 +239,10 @@ i {
         display: flex;
         justify-content: space-between;
         margin: auto 1rem;
+    }
+    .menu-desktop li:hover {
+        color: #f7b617;
+        cursor: pointer;
     }
     .hero {
         display: flex;
@@ -179,5 +286,35 @@ i {
     }
     .buttons {
         margin-top: 0px;
+    }
+    .new-app {
+        height: 80vh;
+        justify-content: flex-start;
+    }
+    .new-mobile {
+        display: none;
+    }
+    .new-desk {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid white;
+        width: 90%;
+        margin: 0px;
+        padding: 10px 0;
+        width: 80%;
+    }
+    .info-new-app {
+        display: block;
+        width: 50%;
+        font-size: 1.5rem;
+        font-weight: 200;
+        padding: 1rem;
+    }
+    .cel-desk {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 }
