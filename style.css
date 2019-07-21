@@ -342,6 +342,14 @@ menu ul {
     font-size: 0.8rem;
 }
 
+.footer-options li:hover,
+.media-icon li:hover,
+.media-desk li:hover {
+    color: #f7b617;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .footer-options ul,
 .media-icon ul,
 .media-desk ul {
@@ -365,6 +373,11 @@ menu ul {
     padding: 0.5rem 1rem 0.5rem 0rem;
 }
 
+.media-icon i:hover,
+.media-desk i:hover {
+    color: #f7b617;
+}
+
 .media-icon,
 .media-desk {
     display: block;
@@ -375,6 +388,7 @@ menu ul {
 .media-icon img {
     width: 85%;
     padding-top: 0.5rem;
+    cursor: pointer;
 }
 
 .footer-op-desk {
