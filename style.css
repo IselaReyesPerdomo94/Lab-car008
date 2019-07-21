@@ -32,8 +32,8 @@ nav {
     align-items: center;
     height: 15vh;
     margin: 0 0;
-    padding: 1rem;
     font-size: 1rem;
+    width: 100%;
 }
 
 figure {
@@ -54,6 +54,19 @@ i:hover {
     color: #f7b617;
 }
 
+footer {
+    background-color: #2b2b2b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+menu,
+menu ul {
+    padding: 1rem;
+    margin: 0;
+}
+
 
 /* Class selector */
 
@@ -62,7 +75,13 @@ i:hover {
     position: absolute;
     background-color: white;
     left: 0;
-    min-width: 100%;
+    width: 100%;
+}
+
+.options ul,
+.menu ul {
+    margin: 0;
+    padding: 0;
 }
 
 .menu-bars:hover .options {
@@ -124,7 +143,7 @@ i:hover {
 
 .menu {
     margin: 0px;
-    padding: 0rem 0.5rem;
+    /* padding: 0rem 0.5rem; */
 }
 
 .menu li,
@@ -235,6 +254,7 @@ i:hover {
 .fee {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     background-color: #f7b617;
     height: 100vh;
@@ -243,11 +263,6 @@ i:hover {
     font-size: 1rem;
     padding: 0.5rem;
 }
-
-
-/* .fee-info {
-    padding: 0.5rem;
-} */
 
 .fee h2 {
     margin: 0px;
@@ -286,9 +301,74 @@ i:hover {
     width: fit-content;
 }
 
+.google-map {
+    width: 98%;
+    height: 300px;
+}
+
 .route-button {
     display: flex;
     justify-content: center;
+}
+
+.logo-footer,
+.rights {
+    width: 100%;
+    margin: 0.5rem 0rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: fit-content;
+    font-size: 0.8rem;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-options,
+.media-icon {
+    display: flex;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-options li,
+.media-icon li {
+    list-style: none;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.footer-options ul,
+.media-icon ul {
+    margin: 0;
+    padding: 1rem;
+}
+
+.media-icon ul {
+    display: flex;
+    padding: 0px;
+}
+
+.media-icon i {
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.8rem;
+    border: none;
+    padding: 0.5rem 1rem 0.5rem 0rem;
+}
+
+.media-icon {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-icon img {
+    width: 85%;
+    padding-top: 0.5rem;
 }
 
 
