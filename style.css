@@ -98,14 +98,17 @@ menu ul {
     padding: 0 2rem;
 }
 
-.options-menu li {
+.options-menu li,
+.options-menu a {
     font-size: 0.8rem;
     color: #444444;
     margin: 2.5rem 0rem 1rem 0rem;
     list-style: none;
+    text-decoration: none;
 }
 
-.options-menu li:hover {
+.options-menu li:hover,
+.options-menu a:hover {
     color: #f7b617;
     cursor: pointer;
 }
@@ -154,7 +157,8 @@ menu ul {
 }
 
 .menu li,
-.menu-desktop li {
+.menu-desktop li,
+.menu-desktop a {
     list-style: none;
     color: #444444;
 }
@@ -443,10 +447,9 @@ menu ul {
 }
 
 .username,
-.password {
+.password,
+.name-last {
     display: flex;
-    margin: 0.5rem;
-    margin-top: 1rem;
     justify-content: center;
 }
 
@@ -456,10 +459,41 @@ menu ul {
     height: 3rem;
 }
 
+.info-register input,
+.driver-info input {
+    border-radius: 5px;
+    height: 2rem;
+    border: none;
+    margin: 0.5rem;
+    width: 16.8rem;
+}
+
+.info-register select,
+.driver-info select {
+    width: 16.8rem;
+    height: 2rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+.name-last input {
+    margin: 0.5rem 0.5rem;
+    width: 7.9rem;
+}
+
 .username input::placeholder,
-.password input::placeholder {
+.password input::placeholder,
+.info-register input::placeholder {
     color: #444444;
     padding: 1rem;
+}
+
+.info-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
 }
 
 
@@ -472,7 +506,9 @@ menu ul {
     padding: 1rem 2rem;
 }
 
-.modal {
+.modal,
+.registration,
+.conduce-registration {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -483,7 +519,9 @@ menu ul {
     z-index: 2;
 }
 
-.signin-modal {
+.signin-modal,
+.register-content,
+.driver-info {
     height: fit-content;
     width: 90%;
     display: flex;
@@ -496,9 +534,38 @@ menu ul {
     z-index: 2;
     padding: 2rem;
     opacity: 1;
+    color: white;
+    text-align: center;
 }
 
-#close-signin {
+.register-content,
+.driver-info {
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.driver-info p {
+    width: 17rem;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    text-align: initial;
+}
+
+.driver-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#not-in-list {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+#close-signin,
+#close-register,
+#close-driver {
     font-size: 1rem;
     color: white;
     text-align: right;
@@ -506,22 +573,35 @@ menu ul {
     cursor: pointer;
 }
 
-#close-signin:hover {
+#close-signin:hover,
+#close-register:hover,
+#close-driver:hover {
     color: #f7b617;
 }
 
-#enter {
+#enter,
+#send,
+#send-driver {
     background-color: #f7b617;
     color: white;
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto;
+    text-align: center;
+    align-items: center;
+    padding: 0.8rem;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 5px;
 }
 
-#enter:hover {
+#enter:hover,
+#send:hover,
+#send-driver:hover {
     color: black;
 }
 
-#remember-pass {
+#remember-pass,
+#new-account {
     display: block;
     text-align: center;
     margin: 1rem auto;
@@ -529,12 +609,15 @@ menu ul {
     font-size: 1rem;
 }
 
-#remember-pass a {
+#remember-pass a,
+#new-account a {
     cursor: pointer;
+    color: white;
     text-decoration-line: underline;
 }
 
-#remember-pass a:hover {
+#remember-pass a:hover,
+#new-account a:hover {
     color: #f7b617;
 }
 
@@ -559,12 +642,15 @@ menu ul {
     .menu-desktop {
         display: flex;
     }
-    .menu-desktop li {
+    .menu-desktop li,
+    .menu-desktop a {
         display: flex;
         justify-content: space-between;
         margin: auto 1rem;
+        text-decoration: none;
     }
-    .menu-desktop li:hover {
+    .menu-desktop li:hover,
+    .menu-desktop a:hover {
         color: #f7b617;
         cursor: pointer;
     }
@@ -713,6 +799,6 @@ menu ul {
         margin-right: 2rem;
     }
     .signin-modal {
-        width: 60%;
+        width: fit-content;
     }
 }

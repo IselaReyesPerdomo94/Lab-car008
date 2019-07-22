@@ -19,16 +19,16 @@
                     <li class="menu-bars"><i class="fas fa-bars"></i>
                         <ul class="options">
                             <div class="options-menu">
-                                <li>Viaja</li>
-                                <li>Conduce</li>
+                                <li><a href="#fee">Viaja</a></li>
+                                <li><a href="#conduce">Conduce</a></li>
                                 <li id="signin">Iniciar sesión</li>
                             </div>
                         </ul>
                     </li>
                 </ul>
                 <ul class="menu-desktop">
-                    <li>Viaja</li>
-                    <li>Conduce</li>
+                    <li><a href="#fee">Viaja</a></li>
+                    <li><a href="#conduce">Conduce</a></li>
                     <li id="signin-desk">Iniciar sesión</li>
                 </ul>
             </menu>
@@ -53,7 +53,89 @@
                     </div>
                     <input type="button" value="Entrar" class="buttons" id="enter">
                     <span id="remember-pass">¿Olvidaste tu contraseña? <a>Da click aquí</a></span>
+                    <span id="new-account">Crear nueva cuenta <a id="new-account-a">Click aquí</a></span>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="registration hide" id="registration">
+        <div class="register-content">
+            <span id="close-register">x</span>
+            <p>Registro</p>
+            <div class="info-register">
+                <div class="name-last">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellidos">
+                </div>
+                <input type="text" placeholder="Correo electrónico: ejemplo@correo.com">
+                <input type="text" placeholder="Teléfono">
+                <input type="password" placeholder="Contraseña">
+                <input type="text" placeholder="Ciudad">
+                <input type="text" placeholder="(Opcional) Código de invitación">
+                <select name="notice">
+                    <option value="¿Cómo te enteraste de nosotros?">¿Cómo te enteraste de nosotros?"</option>
+                    <option value="Redes sociales">Redes sociales</option>
+                    <option value="Medios tradicionales">Medios tradicionales</option>
+                    <option value="amigo">Por un amig@</option>
+                </select>
+                <input type="button" value="Enviar" class="buttons" id="send">
+            </div>
+        </div>
+    </div>
+    <div class="conduce-registration hide" id="driver-register">
+        <div class="driver-info">
+            <div class="driver-content">
+
+                <span id="close-driver">x</span>
+                <h3>Registro de conductor</h3>
+                <p>¿Tienes vehiculo de 4 puertas?</p>
+                <select name="car">
+                    <option value="yes">Si</option>
+                    <option value="no">No</option>
+                </select>
+                <p>Marca</p>
+                <select name="brand">
+                    <option value="Elige la marca de tu vehiculo">Elige la marca de tu vehiculo</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Tesla">Tesla</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+                    <option value="Subaru">Subaru</option>
+                    <option value="Kia">Kia</option>
+                </select>
+                <p id="not-in-list">No ves tu vehículo en la lista?Envía un correo electrónico a: sociosmdv@uber.com</p>
+                <p>Modelo</p>
+                <select name="modelo">
+                    <option value="1">Modelo 1</option>
+                    <option value="2">Modelo 2</option>
+                </select>
+                <select name="year">
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                </select>
+                <p>Número de la matrícula</p>
+                <input type="text" placeholder="Número de la matrícula">
+                <p>La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+                <input type="button" class="buttons" value="Enviar" id="send-driver">
             </div>
         </div>
     </div>
@@ -69,12 +151,12 @@
                 <h2>Disfruta tu viaje</h2>
                 <h2>Eres dueño de tu tiempo</h2>
                 <h3>Viaja con <span>Lab&lt;ar</span></h3>
-                <input type="button" value="REGÍSTRATE" class="buttons">
+                <input type="button" value="REGÍSTRATE" class="buttons" id="register">
                 <div class="or-title">
                     <hr class="divider" />
                     <span class="or-text">O bien</span>
                 </div>
-                <input type="button" value="Conviértete en un conductor" class="buttons">
+                <input type="button" value="Conviértete en un conductor" class="buttons" id="driver-button">
             </div>
         </section>
         <section class="new-app">
@@ -96,14 +178,14 @@
                 </div>
             </div>
         </section>
-        <section class="conduce">
+        <section class="conduce" id="conduce">
             <div class="conduce-mob">
                 <h3>Conduce cuando quieras</h3>
                 <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-                <input type="button" class="buttons" value="Conviertete en conductor">
+                <input type="button" class="buttons" value="Conviertete en conductor" id="driver-button-2">
             </div>
         </section>
-        <section class="fee">
+        <section class="fee" id="fee">
             <div class="fee-info-desk">
 
                 <h2>Tarifas</h2>
