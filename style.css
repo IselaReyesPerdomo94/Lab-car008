@@ -309,10 +309,10 @@ menu ul {
     display: flex;
     justify-content: center;
     height: fit-content;
-    width: fit-content;
+    width: 90%;
 }
 
-.google-map {
+#map {
     width: 98%;
     height: 300px;
 }
@@ -756,7 +756,7 @@ menu ul {
         width: 40%;
     }
     .map {
-        width: fit-content;
+        width: 60%;
     }
     .footer-op-desk {
         display: inline-block;
