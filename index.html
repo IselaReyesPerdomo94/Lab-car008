@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav>
             <menu>
                 <ul class="menu">
@@ -21,7 +21,7 @@
                             <div class="options-menu">
                                 <li>Viaja</li>
                                 <li>Conduce</li>
-                                <li>Iniciar sesión</li>
+                                <li id="signin">Iniciar sesión</li>
                             </div>
                         </ul>
                     </li>
@@ -29,12 +29,34 @@
                 <ul class="menu-desktop">
                     <li>Viaja</li>
                     <li>Conduce</li>
-                    <li>Iniciar sesión</li>
+                    <li id="signin-desk">Iniciar sesión</li>
                 </ul>
             </menu>
             <figure><img src="img/logo.png" alt="Logo"></figure>
         </nav>
     </header>
+    <div class="modal hide" id="signin-modal">
+        <div class="signin-modal">
+
+            <span id="close-signin"> x</span>
+            <div class="user-signin">
+                <i class="fas fa-user"></i>
+                <hr>
+                <div class="user-info">
+                    <div class="username">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="nombre de usuario">
+                    </div>
+                    <div class="password">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="contraseña">
+                    </div>
+                    <input type="button" value="Entrar" class="buttons" id="enter">
+                    <span id="remember-pass">¿Olvidaste tu contraseña? <a>Da click aquí</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <section class="hero">
 

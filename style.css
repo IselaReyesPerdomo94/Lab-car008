@@ -70,6 +70,13 @@ menu ul {
 
 /* Class selector */
 
+.header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
 .options {
     display: none;
     position: absolute;
@@ -164,7 +171,7 @@ menu ul {
     font-size: 1rem;
     font-weight: bold;
     margin: 1rem;
-    margin-right: 3rem;
+    margin-right: 2rem;
     margin-top: 1rem;
     color: #444444;
 }
@@ -257,7 +264,7 @@ menu ul {
     align-items: center;
     flex-direction: column;
     background-color: #f7b617;
-    height: 100vh;
+    height: 120vh;
     color: white;
     margin: 0;
     font-size: 1rem;
@@ -399,6 +406,62 @@ menu ul {
     display: none;
 }
 
+.user-signin {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.user-signin i {
+    color: white;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.user-info {
+    height: fit-content;
+    width: 90%;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.user-info i {
+    color: #f7b617;
+    font-size: 1rem;
+    border: 1px solid white;
+    margin: 0.2rem;
+    border-radius: 1px;
+    padding: 0.8rem;
+}
+
+.username,
+.password {
+    display: flex;
+    margin: 0.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.username input,
+.password input {
+    border-radius: 1px;
+    height: 3rem;
+}
+
+.username input::placeholder,
+.password input::placeholder {
+    color: #444444;
+    padding: 1rem;
+}
+
 
 /* Id Selector */
 
@@ -407,6 +470,76 @@ menu ul {
     align-items: center;
     height: 50vh;
     padding: 1rem 2rem;
+}
+
+.modal {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(43, 43, 43, 0.8);
+    position: fixed;
+    z-index: 2;
+}
+
+.signin-modal {
+    height: fit-content;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(43, 43, 43, 0.99);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 2;
+    padding: 2rem;
+    opacity: 1;
+}
+
+#close-signin {
+    font-size: 1rem;
+    color: white;
+    text-align: right;
+    padding: 0rem 1rem;
+    cursor: pointer;
+}
+
+#close-signin:hover {
+    color: #f7b617;
+}
+
+#enter {
+    background-color: #f7b617;
+    color: white;
+    display: block;
+    margin: 0 auto;
+}
+
+#enter:hover {
+    color: black;
+}
+
+#remember-pass {
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+    color: white;
+    font-size: 1rem;
+}
+
+#remember-pass a {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+#remember-pass a:hover {
+    color: #f7b617;
+}
+
+.hide {
+    display: none;
 }
 
 
@@ -574,5 +707,12 @@ menu ul {
     }
     footer {
         padding: 2rem;
+    }
+    #close-signin {
+        font-size: 2rem;
+        margin-right: 2rem;
+    }
+    .signin-modal {
+        width: 60%;
     }
 }
